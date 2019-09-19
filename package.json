@@ -1,0 +1,24 @@
+{
+  "name": "my-11ty-blog-from-scratch",
+  "version": "1.0.0",
+  "description": "11ty blog from scratch",
+  "author": "Glenn Lanzer III",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "eleventy:default": "npx @11ty/eleventy",
+    "eleventy:watch": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "javascript",
+    "static-site-generator",
+    "blog"
+  ]
+}
