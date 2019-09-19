@@ -83,4 +83,49 @@ Add `start` script to `package.json` that uses `npx` to run our local project ve
 Processed 0 files in 0.03 seconds (v0.9.0)
 ```
 
+is same as:
+
+```
+~/11ty $ npx @11ty/eleventy --input=. --output=_site
+```
+
+This command searches the current directory, outputs to `./_site`.
+
 Eleventy didn't process any files because we have an empty folder with no templates inside.
+
+## 11ty Commands to Know
+
+---
+
+```bash
+# Searches the current directory, outputs to ./_site
+~/11ty $ npx @11ty/eleventy
+```
+
+`--formats`
+
+```bash
+# Use only a sebset of template types
+~/11ty $ npx @11ty/eleventy --formats=md, html, ejs
+```
+
+`--help`
+
+```bash
+# Find out the list of commands
+~/11ty $ npx @11ty/eleventy --help
+```
+
+`--serve`
+
+```bash
+# Boot up a Browsersync web server to apply changes and refresh automatically. This will also --watch for you
+~/11ty $ npx @11ty/eleventy --serve
+```
+
+`--config` to change the config file name:
+
+```bash
+# Override th default eleventy project config filename (.eleventy.js)
+~/11ty $ npx @11ty/eleventy --config=myeleventyconfig.js
+```
